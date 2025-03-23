@@ -7,7 +7,7 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
 
   app.enableCors({
-    origin:['https://react-bookreviewapp.netlify.app/'], // Allow frontend origin
+    origin:['https://react-bookreviewapp.netlify.app'], // Allow frontend origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, 
   });
