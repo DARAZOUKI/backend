@@ -12,8 +12,7 @@ import { ReviewModule } from './review/review.module';
       useFactory: (configService: ConfigService) => {
         return {
           uri: configService.get('MONGO_URI'),
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
+       
         };
       },
     }),
